@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laaouatni - Survey Form - FreeCodeCamp</title>
+    <meta name="title" content="Laaouatni - Survey Form - FreeCodeCamp">
+    <meta name="description" content="progetto HTML/CSS di Laaouatni Anas. è il secondo progetto di FreeCodeCamp. Survey Form (100% responsive)">
+    <link rel="shortcut icon" type="image/jpeg" href="https://avatars.githubusercontent.com/u/87947051?v=4" />
+
+    <meta name="theme-color" content="#0000ff">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Hello World.</h1>
+        <p id="description">thank for testing this <b>Beta</b> website.</p>
+    </div>
+    <div class="div-center">
+        <div class="div-form">
+            <form id="survey-form">
+                <!-- nome -->
+                <label for="name" id="name-label">Come ti Chiami?:</label>
+                <input type="text" id="name" placeholder="nome utente" required><br><br>
+
+                <!-- email -->
+                <label for="email" id="email-label">Digita la tua mail:</label>
+                <input type="email" id="email" placeholder="email utente" inputmode="email" required><br><br>
+
+                <!-- numero -->
+                <label for="number" id="number-label">Digita un numero:</label>
+                <input type="number" id="number" placeholder="numero da 10 a 20" min="10" max="20" inputmode="numeric" required><br><br>
+
+                <!-- dropdown -->
+                <label for="dropdown">Scegli un Colore:</label>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="scelta" selected disabled>scegli un'opzione</option>
+                    <option value="R">rosso</option>
+                    <option value="G">verde</option>
+                <option value="B">blu</option>
+                </select>
+                <br><br>
+
+                <!-- textarea -->
+                <label for="textarea">la tua Opinione:</label><br>
+                <textarea id="textarea" placeholder="Scrivi la tua opinione qui!"></textarea><br><br>
+
+                <hr>
+
+                <!-- radio buttons -->
+                <div class="grid-two-columns">
+                    <div class="div-small-radio">
+                        <label for="m">Maschio</label>
+                        <input id="m" type="radio" name="radio" value="m">
+                    </div>
+                    <div class="div-small-radio">
+                        <label for="f">Femmina</label>
+                        <input id="f" type="radio" name="radio" value="f">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- checkboxes -->
+                <label for="checkbox" id="checkbox-label">accetta la privacy:</label>
+                <input type="checkbox" id="checkbox0" name="checkbox" required checked value="OK">
+                <label for="checkbox" id="checkbox-label1">accetta i termini di servizio:</label>
+                <input type="checkbox" id="checkbox1" name="checkbox" required checked value="OK"><br><br>
+
+                <!-- buttone per mandare il form -->
+                <input type="submit" placeholder="mandare il form" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

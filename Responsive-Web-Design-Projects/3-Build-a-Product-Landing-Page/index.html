@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laaouatni - CNC Simple e-commerce Product Landing Page - FreeCodeCamp</title>
+    <meta name="title" content="Laaouatni - CNC Simple e-commerce Product Landing Page - FreeCodeCamp">
+    <meta name="description" content="progetto HTML/CSS di Laaouatni Anas. è il terzo progetto di FreeCodeCamp. Product Landing Page (100% responsive)">
+    <link rel="shortcut icon" type="image/jpeg" href="https://avatars.githubusercontent.com/u/87947051?v=4" />
+
+    <meta name="theme-color" content="#0000ff">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<header id="header">
+    <nav id="nav-bar">
+        <div class="div-image">
+            <img src="https://avatars.githubusercontent.com/u/87947051?v=4" alt="immagine profilo di github con scritto anas." title="github icon  — Laaouatni Anas." id="header-img">
+        </div>
+        <div class="div-link">
+            <a href="#video-container" class="nav-link">video</a>
+            <a href="#div-servizi" class="nav-link">servizi</a>
+            <a href="#form-container" class="nav-link">form</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <div class="div-iframe" id="video-container">
+            <iframe src="https://www.youtube.com/embed/rspKW7Mpw2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        </div>
+    </section>
+
+    <hr>
+
+    <div id="div-servizi">
+        <h2 id="h2-servizi">i Nostri Servizi:</h2>
+        <section id="card-section">
+            <div class="div-flex">
+                <div class="div-card" id="card-calendario">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar-check" class="svg-inline--fa fa-calendar-check" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM328.1 304.1C338.3 295.6 338.3 280.4 328.1 271C319.6 261.7 304.4 261.7 295 271L200 366.1L152.1 319C143.6 309.7 128.4 309.7 119 319C109.7 328.4 109.7 343.6 119 352.1L183 416.1C192.4 426.3 207.6 426.3 216.1 416.1L328.1 304.1z"></path></svg>
+                    <span class="card-text">Nessun Ritardo</span>
+                </div>
+                <div class="div-card" id="card-precisione">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen-ruler" class="svg-inline--fa fa-pen-ruler" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M109.5 244.1l134.6-134.6L199.9 65.37L138.3 127.1C136.1 128.3 134.4 129.4 132.6 129.4c-1.812 0-4.312-1.031-5.594-2.312L115.8 115.9C112.7 112.8 112.7 107.7 115.8 104.6L177.5 42.95L143.9 9.31c-12.41-12.39-32.5-12.39-44.87 0L9.29 99.01c-12.37 12.39-12.37 32.47 0 44.86L109.5 244.1zM497.9 127.2c18.75-18.75 18.75-49.17-.0006-67.92l-45.25-45.25c-18.78-18.77-49.19-18.77-67.97 0l-45.1 46l113.2 113.2L497.9 127.2zM469.1 334.5l-61.69 61.69c-3.094 3.094-8.117 3.07-11.21-.0239l-11.19-11.19c-3.094-3.094-3.094-8.125 0-11.2l61.69-61.69L402.5 267.9l-134.6 134.6l100.2 100.2c12.41 12.39 32.5 12.39 44.87 0l89.72-89.7c12.37-12.39 12.37-32.47 0-44.86L469.1 334.5zM316.1 82.71l-289.8 289.8c-4.656 4.656-7.763 10.63-8.896 17.12l-17.04 97.47c-2.533 14.49 10.09 27.1 24.58 24.56l97.53-17.1c6.478-1.135 12.45-4.239 17.1-8.89l289.8-289.8L316.1 82.71z"></path></svg>
+                    <span class="card-text">Qualità</span>
+                </div>
+                <div class="div-card" id="card-codice">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M416 31.94C416 21.75 408.1 0 384.1 0c-13.98 0-26.87 9.072-30.89 23.18l-128 448c-.8404 2.935-1.241 5.892-1.241 8.801C223.1 490.3 232 512 256 512c13.92 0 26.73-9.157 30.75-23.22l128-448C415.6 37.81 416 34.85 416 31.94zM176 143.1c0-18.28-14.95-32-32-32c-8.188 0-16.38 3.125-22.62 9.376l-112 112C3.125 239.6 0 247.8 0 255.1S3.125 272.4 9.375 278.6l112 112C127.6 396.9 135.8 399.1 144 399.1c17.05 0 32-13.73 32-32c0-8.188-3.125-16.38-9.375-22.63L77.25 255.1l89.38-89.38C172.9 160.3 176 152.2 176 143.1zM640 255.1c0-8.188-3.125-16.38-9.375-22.63l-112-112C512.4 115.1 504.2 111.1 496 111.1c-17.05 0-32 13.73-32 32c0 8.188 3.125 16.38 9.375 22.63l89.38 89.38l-89.38 89.38C467.1 351.6 464 359.8 464 367.1c0 18.28 14.95 32 32 32c8.188 0 16.38-3.125 22.62-9.376l112-112C636.9 272.4 640 264.2 640 255.1z"></path></svg>
+                    <span class="card-text">Codice G-CODE</span>
+                </div>
+                <div class="div-card" id="card-trasporto">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="truck-fast" class="svg-inline--fa fa-truck-fast" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M64 48C64 21.49 85.49 0 112 0H368C394.5 0 416 21.49 416 48V256H608V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512 480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416V288H208C216.8 288 224 280.8 224 272C224 263.2 216.8 256 208 256H16C7.164 256 0 248.8 0 240C0 231.2 7.164 224 16 224H240C248.8 224 256 216.8 256 208C256 199.2 248.8 192 240 192H48C39.16 192 32 184.8 32 176C32 167.2 39.16 160 48 160H272C280.8 160 288 152.8 288 144C288 135.2 280.8 128 272 128H16C7.164 128 0 120.8 0 112C0 103.2 7.164 96 16 96H64V48zM160 464C186.5 464 208 442.5 208 416C208 389.5 186.5 368 160 368C133.5 368 112 389.5 112 416C112 442.5 133.5 464 160 464zM480 368C453.5 368 432 389.5 432 416C432 442.5 453.5 464 480 464C506.5 464 528 442.5 528 416C528 389.5 506.5 368 480 368zM466.7 160H400V96H466.7C483.7 96 499.1 102.7 512 114.7L589.3 192C601.3 204 608 220.3 608 237.3V288H544V237.3L466.7 160z"></path></svg>
+                    <span class="card-text">Consegne Veloci</span>
+                </div>
+                <div class="div-card" id="card-soldi">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M448 128H80C71.13 128 64 120.9 64 112S71.13 96 80 96H480V80C480 53.49 458.5 32 432 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h384c35.35 0 64-28.66 64-64V192C512 156.7 483.3 128 448 128zM416 336c-17.62 0-32-14.38-32-32s14.38-32 32-32s32 14.38 32 32S433.6 336 416 336z"></path></svg>
+                    <span class="card-text">Prezzi Bassi</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <section id="form-section">
+        <div class="div-two-grid">
+            <div>
+                <label for="email">Hai bisogno<br> di più Info?</label>
+            </div>
+            <div class="div-centered" id="form-container">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                    <input type="email" name="email" id="email" placeholder="inserisci la tua mail.">
+                    <input type="submit" mame="submit" id="submit" value="invia">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <p>
+        &copy anas
+    </p>
+</footer>
+
+</html>

@@ -1,0 +1,317 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', monospace;
+    background-color: rgb(239, 251, 255);
+}
+
+.TitleContainer {
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+#title {
+    transition-duration: 0.3s;
+}
+
+#title:hover {
+    font-size: 3.5em;
+    color: rgb(0, 123, 255);
+    transition-duration: 0.3s;
+}
+
+p {
+    position: relative;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    text-decoration: none;
+}
+
+u {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+figcaption {
+    position: relative;
+    top: 2em;
+    color: blue;
+    font-size: 11px;
+    opacity: 0;
+    transition-duration: 0.6s;
+    left: 40%;
+}
+
+#image:hover+figcaption {
+    opacity: 1;
+    transition-duration: 1000ms;
+    left: 0px;
+}
+
+#img-div {
+    display: grid;
+    justify-content: center;
+}
+
+#image {
+    box-shadow: rgba(75, 102, 255, 0.1) 0px 0em 1em 1em;
+    margin-bottom: 5px;
+    border: 10px solid white;
+    transition-duration: 0.5s;
+    border-radius: 10%;
+}
+
+#image:hover {
+    transition-duration: 200ms;
+    border: 1em solid white;
+    box-shadow: rgba(0, 143, 253, 0.15) 0px 0em 1em 1em;
+    border-radius: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.org-link:hover,
+.org-link:hover::after {
+    content: ".org";
+    transition-duration: 0.4s;
+    color: rgba(0, 13, 196, 0.919);
+}
+
+#descriptionP:hover:not(.org-link) {
+    color: rgba(0, 0, 0, 0.9);
+    transition-duration: 0.4s;
+}
+
+#descriptionP {
+    bottom: 2em;
+    font-weight: 500 !important;
+}
+
+p::after,
+h1::after,
+figcaption::after {
+    content: ".";
+}
+
+figcaption::before {
+    content: "- "
+}
+
+.footer-icons {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10%;
+    transition-duration: 0.2s;
+}
+
+.footer-icons:hover {
+    transition-duration: 0.3s;
+    transform: rotate(10deg)
+}
+
+.footer-div {
+    margin-top: 5em;
+    display: flex;
+    background-color: rgba(197, 239, 253, 0.804);
+    width: 100%;
+    padding: 1em;
+    justify-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+.footer-text {
+    margin-right: 3em;
+    margin-left: 1em;
+    bottom: 0em !important;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.893);
+}
+
+#tribute-info {
+    margin-top: 3rem;
+    margin-left: 5em;
+    transition-duration: 0.3s;
+}
+
+.periodo::before {
+    content: "Completato in: ";
+    opacity: 0.6;
+    padding-right: 1em;
+    font-weight: 300;
+}
+
+.periodo::after {
+    content: " giorni(circa).";
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+.periodo-giorno::before {
+    content: "Completato in: ";
+    opacity: 0.6;
+    padding-right: 1em;
+    font-weight: 300;
+}
+
+.periodo-giorno::after {
+    content: " giorno(circa).";
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+.inizio::before {
+    content: "Iniziato il: ";
+    opacity: 0.6;
+    padding-right: 1em;
+    font-weight: 300;
+}
+
+.fine::before {
+    content: "Completato il: ";
+    opacity: 0.6;
+    padding-right: 1em;
+    font-weight: 300;
+}
+
+.github::before {
+    content: "repesitory Github: ";
+    opacity: 0.6;
+    padding-right: 1em;
+    font-weight: 300;
+}
+
+.github::after,
+.fine::after,
+.inizio::after {
+    content: ".";
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+.important-items {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin: 0.5em;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.153);
+    color: blue;
+    transition-duration: 0.3s;
+    font-weight: bold;
+}
+
+summary {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details:nth-last-of-type(1) {
+    margin-bottom: 35%;
+}
+
+.summary-container {
+    position: relative;
+    bottom: 0 !important;
+}
+
+.link-underline {
+    text-decoration: underline;
+}
+
+@media(max-width:550px) {
+    img {
+        transition-duration: 0.2s;
+        max-width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    .footer-text {
+        transition-duration: 0.2s;
+        margin-right: 1em;
+        font-size: small;
+        margin-left: 0;
+        ;
+    }
+    #title:hover {
+        font-size: 210%;
+    }
+    #tribute-info {
+        margin-left: 3em !important;
+    }
+    .link-long {
+        font-size: 0.8em;
+        transition-duration: 0.2s;
+    }
+}
+
+@media (max-width:507px) {
+    #tribute-info {
+        margin-left: 1.5em !important;
+    }
+}
+
+@media (max-width:485px) {
+    #tribute-info {
+        margin-left: 0.7em !important;
+    }
+    summary {
+        font-size: 1.2em !important;
+        transition-duration: 0.3s;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-text {
+        transition-duration: 0.2s;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:350px) {
+    .footer-icons {
+        transition-duration: 0.2s;
+        width: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 315px) {
+    .footer-text {
+        transition-duration: 0.2s;
+        display: none;
+    }
+    .footer-icons {
+        transition-duration: 0.2s;
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 150px) {
+    h1 {
+        overflow-x: scroll;
+    }
+    summary {
+        overflow-x: scroll;
+    }
+    p {
+        overflow-x: scroll;
+    }
+    .footer-div {
+        overflow-x: scroll;
+    }
+}

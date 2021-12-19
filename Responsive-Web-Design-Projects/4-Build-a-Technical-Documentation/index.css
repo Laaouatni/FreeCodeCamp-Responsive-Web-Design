@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+    font-family: poppins, sans-serif, arial, monospace;
+    background-color: rgb(210, 244, 255);
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#navbar {
+    margin-right: 3em;
+    top: 0;
+    background-color: rgb(110, 78, 255);
+    box-shadow: rgba(0, 0, 255, 0.193) 0 0 50px;
+    float: left;
+}
+
+#navbar:first-child {
+    border-radius: 1em;
+}
+
+section {
+    margin: 2em 0;
+}
+
+header {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#first-nav-div header {
+    color: white;
+    text-shadow: rgba(255, 255, 255, 0.091) 0 0 0.2em;
+    transition-duration: 0.5s;
+}
+
+#first-nav-div header:hover {
+    color: white;
+    text-shadow: white 0 0 1em;
+    transition-duration: 0.2s;
+}
+
+.div-link-nav {
+    background-color: white;
+    margin: 0.3em 0.5em;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 255, 0.193) 0 0 1em;
+    transition-duration: 1s;
+}
+
+.div-link-nav:hover {
+    transform: translateY(-0.5em);
+    box-shadow: rgba(0, 0, 255, 0.597) 0 0 2em;
+    background-color: blue;
+    transition-duration: 0.3s;
+    border-radius: 0.8em;
+}
+
+.nav-link {
+    transition-duration: 1s;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.1em;
+    padding: 1em;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#first-nav-div {
+    padding: 1em;
+}
+
+#mdn {
+    font-weight: 500;
+    color: blue;
+}
+
+p,
+ul {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+code {
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+@media (max-height: 1000px) {
+    aside {
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .div-flex {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .div-link-nav {
+        flex-grow: 1;
+        font-size: 0.7em;
+    }
+    #navbar {
+        margin: 0.5em;
+    }
+    section {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    aside {
+        max-height: 70vh;
+        overflow: scroll;
+    }
+}

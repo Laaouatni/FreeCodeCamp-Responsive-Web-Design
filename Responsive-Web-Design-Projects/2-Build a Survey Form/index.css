@@ -1,0 +1,218 @@
+html {
+    font-family: poppins, monospace;
+    background-color: rgba(0, 17, 255, 0.159);
+}
+
+input[type],
+select,
+textarea {
+    width: 100%;
+    margin: auto;
+    height: 3em;
+    overflow-x: auto;
+}
+
+input,
+select {
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition-duration: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+textarea {
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border: 0px solid #fff;
+    height: 5em !important;
+}
+
+input[type="submit"],
+select,
+input[placeholder],
+textarea {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    font-family: poppins, monospace;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+option[value="R"] {
+    background: rgb(255, 0, 20);
+}
+
+option[value="G"] {
+    background: rgb(0, 255, 85);
+}
+
+option[value="B"] {
+    background: rgb(34, 0, 255);
+}
+
+select option:disabled {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    background-color: transparent;
+}
+
+input[type="submit"] {
+    color: black;
+    transition-duration: 0.5s;
+}
+
+label {
+    font-weight: 400;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background: linear-gradient(to left, rgba(0, 164, 228, 1), rgb(13, 0, 255));
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+    border-radius: 2em;
+    font-weight: 500;
+    height: 60px;
+    font-size: 1.2em;
+}
+
+textarea {
+    margin-bottom: 3%;
+}
+
+textarea {
+    color: rgba(0, 0, 0, 0.674);
+}
+
+.div-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    padding: 2em;
+    margin: 2em;
+    border-radius: 0.5em;
+    transition-duration: 0.5s;
+}
+
+.div-center:hover {
+    border-radius: 2em;
+    transition-duration: 0.3s;
+    background: linear-gradient(to top left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+#description {
+    font-weight: 300;
+    margin-bottom: 5%;
+    transition-duration: 0.3s;
+    opacity: 0.7;
+    color: rgb(0, 0, 0);
+}
+
+label::after {
+    content: "*";
+    margin-left: 3px;
+    color: rgb(0, 0, 255);
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    transition-duration: 0.3s;
+    border-radius: 0.7em;
+}
+
+img {
+    max-width: 99%;
+    margin: auto;
+}
+
+input[type="checkbox"] {
+    height: 2em;
+    margin: 0 !important;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.div-small-radio>input {
+    height: 2em !important;
+}
+
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+label[for="f"] {
+    color: rgb(255, 128, 149);
+    font-weight: 700;
+}
+
+label[for="m"] {
+    color: rgb(0, 30, 255);
+    font-weight: 700;
+}
+
+@media(max-width:600px) {
+    .div-center {
+        margin: 1em;
+        padding: 1.5em 1.2em 1.5em 0.7em;
+    }
+    form {
+        margin: auto;
+    }
+}
+
+@media(max-width:450px) {
+    label[for="checkbox"] {
+        font-size: 0.8em;
+        transition-duration: 0.3s;
+    }
+}
+
+@media(max-width:380px) {
+    .div-center {
+        margin: 0.3em;
+    }
+    .div-center:hover {
+        border-radius: 1.3em;
+    }
+    label[for="checkbox"] {
+        font-size: 0.6em;
+    }
+}
+
+@media(max-width:215px) {
+    label {
+        font-size: 0.7em;
+        transition-duration: 0.3s;
+    }
+}
+
+@media(max-height:900px) {
+    #description {
+        transform: translateY(-1.5em);
+        transition-duration: 0.3s;
+    }
+    .div-center {
+        transform: translateY(-1.4em);
+    }
+}
+
+@media(max-height:815px) {
+    input[type]:not([type="submit"], [type="checkbox"]),
+    select,
+    textarea {
+        height: 2.5em;
+    }
+    label {
+        font-size: 0.8em;
+    }
+}
